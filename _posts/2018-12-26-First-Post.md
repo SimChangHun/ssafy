@@ -8,6 +8,7 @@ title: ssafy 2주차
 Flask : 웹 어플리케이션을 만드는 마이크로프레임워크(microframework)
 
 * 만든거
+
 slack api기반? 봇 만듬
 slack 채팅방에 @끝말잇기봇
 www.wordrow.kr 에서 단어 크롤링 
