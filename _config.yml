@@ -1,901 +1,293 @@
-Skip to content 
-
-
-
-
-  
-
-
-
-
-
-►Why GitHub?   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Business
-
-
-►Explore   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Marketplace
-
-
-►Pricing   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- Sign in Sign up 
-
-
-
-
-
-
-
-Watch You must be signed in to watch a repository 112  
-Star You must be signed in to star a repository 4,509  
-Fork You must be signed in to fork a repository 7,858  
-
- mmistakes/minimal-mistakes 
-
- Code     Issues 14     Pull requests 5    Projects 0  Insights  
-
-
-  
-
-
-
- Dismiss  
-
-Join GitHub today
-
-GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.
-Sign up 
-
-Branch: master  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Find file  Copy path  
-
-minimal-mistakes / _config.yml 
-
-a2620d3  Nov 21, 2018  
-@mmistakes mmistakes Add support for utterances (#1966) 
-
-
-► 22 contributors  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- @mmistakes  @ohadschn  @Pradhyo  @yihangho  @LoveMeWithoutAll  @YuyingWu  @westes  @vlajos  @tony-ho  @rriemann  @nickgarlis  @maxheld83  @maxime-michel  @matiasfrndz  @kennonkwok  @jeremyvoltz  @thoemmi  @hbarudin  @rschaerer  @gabor-meszaros  @cdodd  @4brunu  
-
-
-
-Raw Blame History 
-  Open this file in GitHub Desktop  You must be signed in to make or propose changes  You must be signed in to make or propose changes 
-293 lines (265 sloc) 8.24 KB 
-
-
-1 # Welcome to Jekyll! 
-2 # 
-3 # This config file is meant for settings that affect your entire site, values 
-4 # which you are expected to set up once and rarely need to edit after that. 
-5 # For technical reasons, this file is *NOT* reloaded automatically when you use 
-6 # `jekyll serve`. If you change this file, please restart the server process. 
-7 
- 
-8 # Theme Settings 
-9 # 
-10 # Review documentation to determine if you should use `theme` or `remote_theme` 
-11 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme 
-12 
- 
-13 # theme                  : "minimal-mistakes-jekyll" 
-14 # remote_theme           : "mmistakes/minimal-mistakes" 
-15 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" 
-16 
- 
-17 # Site Settings 
-18 locale                   : "en-US" 
-19 title                    : "SCH" 
-20 title_separator          : "-" 
-21 name                     : "Sim Chang Hun" 
-22 description              : "--." 
-23 url                      : "https://SimChangHun.github.io" 
-24 baseurl                  : "/ssafy" # "public"
-25 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes" 
-26 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" 
-27 # breadcrumbs            : false # true, false (default) 
-28 words_per_minute         : 200 
-29 comments: 
-30   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom" 
-31   disqus: 
-32     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname- 
-33   discourse: 
-34     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org 
-35   facebook: 
-36     # https://developers.facebook.com/docs/plugins/comments 
-37     appid                : 
-38     num_posts            : # 5 (default) 
-39     colorscheme          : # "light" (default), "dark" 
-40   utterances: 
-41     theme                : # "github-light" (default), "github-dark" 
-42 staticman: 
-43   allowedFields          : # ['name', 'email', 'url', 'message'] 
-44   branch                 : # "master" 
-45   commitMessage          : # "New comment by {fields.name}" 
-46   filename               : # comment-{@timestamp} 
-47   format                 : # "yml" 
-48   moderation             : # true 
-49   path                   : # "/_data/comments/{options.slug}" (default) 
-50   requiredFields         : # ['name', 'email', 'message'] 
-51   transforms: 
-52     email                : # "md5" 
-53   generatedFields: 
-54     date: 
-55       type               : # "date" 
-56       options: 
-57         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds" 
-58   endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance 
-59 reCaptcha: 
-60   siteKey                : 
-61   secret                 : 
-62 atom_feed: 
-63   path                   : # blank (default) uses feed.xml 
-64 search                   : # true, false (default) 
-65 search_full_content      : # true, false (default) 
-66 search_provider          : # lunr (default), algolia, google 
-67 algolia: 
-68   application_id         : # YOUR_APPLICATION_ID 
-69   index_name             : # YOUR_INDEX_NAME 
-70   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY 
-71   powered_by             : # true (default), false 
-72 google: 
-73   search_engine_id       : # YOUR_SEARCH_ENGINE_ID 
-74   instant_search         : # false (default), true 
-75 # SEO Related 
-76 google_site_verification : 
-77 bing_site_verification   : 
-78 yandex_site_verification : 
-79 naver_site_verification  : 
-80 
- 
-81 # Social Sharing 
-82 twitter: 
-83   username               : 
-84 facebook: 
-85   username               : 
-86   app_id                 : 
-87   publisher              : 
-88 og_image                 : # Open Graph/Twitter default site image 
-89 # For specifying social profiles 
-90 # - https://developers.google.com/structured-data/customize/social-profiles 
-91 social: 
-92   type                   : # Person or Organization (defaults to Person) 
-93   name                   : # If the user or organization name differs from the site's name 
-94   links: # An array of links to social media profiles 
-95 
- 
-96 # Analytics 
-97 analytics: 
-98   provider               : false # false (default), "google", "google-universal", "custom" 
-99   google: 
-100     tracking_id          : 
-101     anonymize_ip         : # true, false (default) 
-102 
- 
-103 
- 
-104 # Site Author 
-105 author: 
-106   name             : "Your Name" 
-107   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" 
-108   bio              : "I am an amazing person." 
-109   location         : "Somewhere" 
-110   email            : 
-111   links: 
-112     - label: "Email" 
-113       icon: "fas fa-fw fa-envelope-square" 
-114       # url: mailto:your.name@email.com 
-115     - label: "Website" 
-116       icon: "fas fa-fw fa-link" 
-117       # url: "https://your-website.com" 
-118     - label: "Twitter" 
-119       icon: "fab fa-fw fa-twitter-square" 
-120       # url: "https://twitter.com/" 
-121     - label: "Facebook" 
-122       icon: "fab fa-fw fa-facebook-square" 
-123       # url: "https://facebook.com/" 
-124     - label: "GitHub" 
-125       icon: "fab fa-fw fa-github" 
-126       # url: "https://github.com/" 
-127     - label: "Instagram" 
-128       icon: "fab fa-fw fa-instagram" 
-129       # url: "https://instagram.com/" 
-130 
- 
-131 # Site Footer 
-132 footer: 
-133   links: 
-134     - label: "Twitter" 
-135       icon: "fab fa-fw fa-twitter-square" 
-136       # url: 
-137     - label: "Facebook" 
-138       icon: "fab fa-fw fa-facebook-square" 
-139       # url: 
-140     - label: "GitHub" 
-141       icon: "fab fa-fw fa-github" 
-142       # url: 
-143     - label: "GitLab" 
-144       icon: "fab fa-fw fa-gitlab" 
-145       # url: 
-146     - label: "Bitbucket" 
-147       icon: "fab fa-fw fa-bitbucket" 
-148       # url: 
-149     - label: "Instagram" 
-150       icon: "fab fa-fw fa-instagram" 
-151       # url: 
-152 
- 
-153 
- 
-154 # Reading Files 
-155 include: 
-156   - .htaccess 
-157   - _pages 
-158 exclude: 
-159   - "*.sublime-project" 
-160   - "*.sublime-workspace" 
-161   - vendor 
-162   - .asset-cache 
-163   - .bundle 
-164   - .jekyll-assets-cache 
-165   - .sass-cache 
-166   - assets/js/plugins 
-167   - assets/js/_main.js 
-168   - assets/js/vendor 
-169   - Capfile 
-170   - CHANGELOG 
-171   - config 
-172   - Gemfile 
-173   - Gruntfile.js 
-174   - gulpfile.js 
-175   - LICENSE 
-176   - log 
-177   - node_modules 
-178   - package.json 
-179   - Rakefile 
-180   - README 
-181   - tmp 
-182   - /docs # ignore Minimal Mistakes /docs 
-183   - /test # ignore Minimal Mistakes /test 
-184 keep_files: 
-185   - .git 
-186   - .svn 
-187 encoding: "utf-8" 
-188 markdown_ext: "markdown,mkdown,mkdn,mkd,md" 
-189 
- 
-190 
- 
-191 # Conversion 
-192 markdown: kramdown 
-193 highlighter: rouge 
-194 lsi: false 
-195 excerpt_separator: "\n\n" 
-196 incremental: false 
-197 
- 
-198 
- 
-199 # Markdown Processing 
-200 kramdown: 
-201   input: GFM 
-202   hard_wrap: false 
-203   auto_ids: true 
-204   footnote_nr: 1 
-205   entity_output: as_char 
-206   toc_levels: 1..6 
-207   smart_quotes: lsquo,rsquo,ldquo,rdquo 
-208   enable_coderay: false 
-209 
- 
-210 
- 
-211 # Sass/SCSS 
-212 sass: 
-213   sass_dir: _sass 
-214   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style 
-215 
- 
-216 
- 
-217 # Outputting 
-218 permalink: /:categories/:title/ 
-219 paginate: 5 # amount of posts to show 
-220 paginate_path: /page:num/ 
-221 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones 
-222 
- 
-223 
- 
-224 # Plugins (previously gems:) 
-225 plugins: 
-226   - jekyll-paginate 
-227   - jekyll-sitemap 
-228   - jekyll-gist 
-229   - jekyll-feed 
-230   - jemoji 
-231   - jekyll-include-cache 
-232 
- 
-233 # mimic GitHub Pages with --safe 
-234 whitelist: 
-235   - jekyll-paginate 
-236   - jekyll-sitemap 
-237   - jekyll-gist 
-238   - jekyll-feed 
-239   - jemoji 
-240   - jekyll-include-cache 
-241 
- 
-242 
- 
-243 # Archives 
-244 #  Type 
-245 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default) 
-246 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives 
-247 #  Path (examples) 
-248 #  - Archive page should exist at path when using Liquid method or you can 
-249 #    expect broken links (especially with breadcrumbs enabled) 
-250 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/ 
-251 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/ 
-252 #  - <base_path/my-awesome-category/index.html ~> path: / 
-253 category_archive: 
-254   type: liquid 
-255   path: /categories/ 
-256 tag_archive: 
-257   type: liquid 
-258   path: /tags/ 
-259 # https://github.com/jekyll/jekyll-archives 
-260 # jekyll-archives: 
-261 #   enabled: 
-262 #     - categories 
-263 #     - tags 
-264 #   layouts: 
-265 #     category: archive-taxonomy 
-266 #     tag: archive-taxonomy 
-267 #   permalinks: 
-268 #     category: /categories/:name/ 
-269 #     tag: /tags/:name/ 
-270 
- 
-271 
- 
-272 # HTML Compression 
-273 # - http://jch.penibelst.de/ 
-274 compress_html: 
-275   clippings: all 
-276   ignore: 
-277     envs: development 
-278 
- 
-279 
- 
-280 # Defaults 
-281 defaults: 
-282   # _posts 
-283   - scope: 
-284       path: "" 
-285       type: posts 
-286     values: 
-287       layout: single 
-288       author_profile: true 
-289       read_time: true 
-290       comments: # true 
-291       share: true 
-292       related: true 
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-►
-
-
- 
-
-
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-  Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-
- 
-
-
- 
-
-
-
-
-
-
-
-
- 
-
-
-
-Press h to open a hovercard with more details. 
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "SCH"
+title_separator          : "-"
+name                     : "Sim Chang Hun"
+description              : "--"
+url                      : "https://SimChangHun.github.io"
+baseurl                  : "/ssafy" # "public"
+repository               : "SimChangHun/ssafy"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+staticman:
+  allowedFields          : # ['name', 'email', 'url', 'message']
+  branch                 : # "master"
+  commitMessage          : # "New comment by {fields.name}"
+  filename               : # comment-{@timestamp}
+  format                 : # "yml"
+  moderation             : # true
+  path                   : # "/_data/comments/{options.slug}" (default)
+  requiredFields         : # ['name', 'email', 'message']
+  transforms:
+    email                : # "md5"
+  generatedFields:
+    date:
+      type               : # "date"
+      options:
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+
+# Site Author
+author:
+  name             : "Your Name"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: mailto:your.name@email.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
 
