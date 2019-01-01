@@ -20,9 +20,9 @@ title                    : "SCH"
 title_separator          : "-"
 name                     : "Sim Chang Hun"
 description              : "--"
-url                      : "https://SimChangHun.github.io"
+url                      : "https://dna7788.github.io"
 baseurl                  : "/ssafy" # "public"
-repository               : "SimChangHun/ssafy"
+repository               : "dna7788/ssafy"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
