@@ -2,7 +2,7 @@
 title: 마크다운 문법 사용법
 ---
 
-# 마크다운 문법 사용법
+# 마크다 정리
 ***
 ## HTML 병행
 html도 지원함
@@ -36,7 +36,7 @@ html도 지원함
 \>인용글 두번째줄
 \>인용글 세번째줄
 
->인용글
+>인용글 예제
 >인용글 두번째줄
 >인용글 세번째줄
 
@@ -86,14 +86,86 @@ html도 지원함
 ***
 ## 개행
 각 라인의 끝에 2개 이상의 스패이스를 넣으면 줄넘기기가 됨.
+엔터 두번 쳐도 됨
+
 그냥 엔터치면
 개행이 안되지만
 스패이스 두개 넣으면  
 개행됨  한줄에 써도 
 
+***
+## 가로 줄긋기
+\-\-\-
+\*\*\*
+\_\_\_
+셋 중 하나
+---
+
+***
+## 링크
+인라인 링크  
+\[링크](http://주소 "링크제목").
+[구글링크](http://www.google.com "구글")
+
+참조 링크  
+\[링크1]\[1] 과 \[링크2]\[2]
+\[1]: 주소 "링크제목"
+\[2]: 주소 "링크제목"
+
+[글쓰는데 참조한 링크1][1] 과 [글쓰는데 참조한 링크2][2]
+[1]: https://www.evernote.com/shard/s3/client/snv?noteGuid=128acb97-d3c5-4eda-aa1b-c71ecd2f3a15&noteKey=54a14ebd5d4ce7507bf78e5af640d0e9&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs3%2Fsh%2F128acb97-d3c5-4eda-aa1b-c71ecd2f3a15%2F54a14ebd5d4ce7507bf78e5af640d0e9&title=000_%25EB%25A7%2588%25ED%2581%25AC%25EB%258B%25A4%25EC%259A%25B4%25EB%25B0%25B0%25EC%259A%25B0%25EA%25B8%25B0.txt "직접 정리한 MarkDown 문법 배우기 자료-Seoulrain"
+[2]: https://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans/ "워드프레스 마크다운(Markdown) 문법 설명(표) - Kalkin7 Blog"
+
+URL만으로도 가능
+\<http://주소>
+<http://www.naver.com>
+
+***
+## 각주
+각주 \[^1] 다는 법
+\[^1]: 각주 설명
+
+각주 [^1] 다는 법 
+[^1]: 각주설명입니다
+
+***
+## 코드블럭
+
+\~~~~
+코드 쓰자
+이것저것
+써보면 됨
+\~~~~
 
 
-### 참조링크
-https://blog.kalkin7.com/2014/02/10/lets-write-using-markdown/
-https://www.evernote.com/shard/s3/client/snv?noteGuid=128acb97-d3c5-4eda-aa1b-c71ecd2f3a15&noteKey=54a14ebd5d4ce7507bf78e5af640d0e9&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs3%2Fsh%2F128acb97-d3c5-4eda-aa1b-c71ecd2f3a15%2F54a14ebd5d4ce7507bf78e5af640d0e9&title=000_%25EB%25A7%2588%25ED%2581%25AC%25EB%258B%25A4%25EC%259A%25B4%25EB%25B0%25B0%25EC%259A%25B0%25EA%25B8%25B0.txt
-https://blog.kalkin7.com/2014/02/05/wordpress-markdown-quick-reference-for-koreans/
+~~~~
+코드 쓰자
+이것저것
+써보면 됨
+~~~~
+
+## 정의 목록
+css 설정(테마)에 따라 다르게 될수도 있음
+
+WordPress  
+\: 세계 최대의 오픈소스 저작물 관리 시스템
+Markdown  
+\: 일반 텍스트 문서를 HTML로 변환하는 도구
+
+WordPress
+: 세계 최대의 오픈소스 저작물 관리 시스템
+Markdown
+: 일반 텍스트 문서를 HTML로 변환하는 도구
+
+***
+## 축약어
+\*[HTML]: HyperText Markup Language
+
+문서 어느곳이든 정의해놓으면 됨
+HTML의 설명을 보고싶으면 HTML위에 마우스 클릭
+
+*[HTML]: HyperText Markup Language
+
+***
+## 이미지 넣기
+\<img src="이미지주소" align=right>
