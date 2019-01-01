@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Sim Chang Hun"
 description              : "--"
 url                      : "https://dna7788.github.io"
-baseurl                  : "/ssafy" # "public"
+baseurl                  : "/KEY-board" # "public"
 repository               : "dna7788/ssafy"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -103,10 +103,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Sim Chang Hun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Hello World."
+  location         : "somewhere in S.Korea Seoul"
   email            :
   links:
     - label: "Email"
