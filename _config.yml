@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Sim Chang Hun"
 description              : "--"
 url                      : "https://dna7788.github.io"
-baseurl                  : "/KEY-board" # "public"
+baseurl                  : "/ssafy" # "public"
 repository               : "dna7788/ssafy"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
